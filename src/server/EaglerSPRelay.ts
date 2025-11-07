@@ -12,8 +12,8 @@ import { RelayPacket01ICEServers } from '../pkt/RelayPacket01ICEServers';
 import { RelayPacket69Pong } from '../pkt/RelayPacket69Pong';
 import { RelayVersion } from '../utils/RelayVersion';
 import { LocalWorld, RelayPacket07LocalWorlds } from '../pkt/RelayPacket07LocalWorlds';
-import '../pkt/RegisterPackets';
 import { SocketAddress } from '../utils/SocketAddress';
+import '../pkt/RegisterPackets';
 
 export class EaglerSPRelay {
   private readonly WSS: WebSocketServer;

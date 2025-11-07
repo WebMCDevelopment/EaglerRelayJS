@@ -25,9 +25,9 @@ $ eaglerrelayjs --port 8080
 
 ### Existing App
 ```js
-const http = require('http');
-const express = require('express');
-const { EaglerSPRelay } = require('eaglerrelayjs');
+import http from 'http';
+import express from 'express';
+import { EaglerSPRelay } from 'eaglerrelayjs';
 
 const app = express();
 const server = http.createServer(app);
