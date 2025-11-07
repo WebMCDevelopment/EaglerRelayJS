@@ -3,6 +3,8 @@ name: Publish Package to npmjs
 on:
   release:
     types: [published]
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -26,7 +28,7 @@ jobs:
           node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
       - run: |
-          apt install jq curl -y
+          sudo apt install jq curl -y
           pv=$(jq -r .version package.json)
           rv=$(curl -s https://registry.npmjs.org/$(jq -r .name package.json) | jq -r '."dist-tags".latest')
           [ "$pv" = "$rv" ] && exit 0
