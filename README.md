@@ -17,7 +17,7 @@ Eaglercraft relay server implementation written in TypeScript
 
 ### Standalone
 ```sh
-$ npm install -g eaglerrelayjs
+$ npm install -g github:WebMCDevelopment/EaglerRelayJS
 $ mkdir -p relay
 $ cd relay
 $ eaglerrelayjs --port 8080
